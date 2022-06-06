@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap');
+
+.ityped-cursor {
+    font-weight: 300; 
+    color: #5d55fa;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #fbffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading-primary {
+    font-family: 'Inter', sans-serif;
+    font-size: 60px;
+    color: black;
+}
+
+.heading-span {
+    font-weight: 500;
+}
+
+.text-paragraph-14 {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: black;
+    line-height: 1.7;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn:hover {
+    box-shadow: 0px 8px 24px rgba(160, 160, 160, 0.15);
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #5d55fa;
+    color: white;
+    font-weight: 500;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: solid 2px #5d55fa;
+    text-align: center;
+    font-size: 18px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Start Navbar */
+.navbar-lp {
+    height: 100%;
+}
+
+nav {
+    width: 80%;
+    height: 70px;
+    padding: 0px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.logo-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: #5d5ffa;
+}
+
+.nav-links {
+    font-family: 'Inter', sans-serf;
+    font-size: 16px;
+    color: rgba(51, 78, 104, 0.7);
+}
+
+.nav-links:hover {
+    color: #5d5ffa;
+}
+
+
+/* Header / Jumbotron */
+.header {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.header-content {
+    width: 100%;
+    align-self: flex-start;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.header-img {
+    width: 500px;
+}
+
+.header-img img {
+    width: 100%;
+}
+
+.culture {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.culture-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 75px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.culture-card {
+    overflow: hidden;
+    justify-self: center;
+    position: relative;
+    width: 250px;
+    height: 150px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0px 8px 24px rgba(160, 160, 160, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+}
+
+.culture-card::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: url("../assets/svg/square.svg") no-repeat center center/cover;
+}
+
+.culture-card-1::before,
+.culture-card-3::before {
+    transform: translate(35%, -50%) rotate(110deg);
+    top: 0px;
+    right: 25px;
+    -webkit-transform: translate(35%, -50%) rotate(110deg);
+    -moz-transform: translate(35%, -50%) rotate(110deg);
+    -ms-transform: translate(35%, -50%) rotate(110deg);
+    -o-transform: translate(35%, -50%) rotate(110deg);
+}
+
+.culture-card-2::before,
+.culture-card-4::before {
+    transform: translate(35%, -50%) rotate(-69deg);
+    top: 150px;
+    right: 25px;
+    -webkit-transform: translate(35%, -50%) rotate(-69deg);
+    -moz-transform: translate(35%, -50%) rotate(-69deg);
+    -ms-transform: translate(35%, -50%) rotate(-69deg);
+    -o-transform: translate(35%, -50%) rotate(-69deg);
+}
